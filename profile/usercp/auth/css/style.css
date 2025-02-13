@@ -1,0 +1,181 @@
+html,
+body {
+    background-color: #000000;
+}
+
+#navbarResponsive_top {
+    justify-content: space-between;
+}
+
+.ticket-info {
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline dotted;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 0.8rem;
+    border-bottom: 1px solid black;
+    margin-left: 5px;
+}
+
+.ticket-info::before {
+    display: inline-flex;
+    border-right: 1px dotted black;
+    padding-right: 6px;
+    margin-right: 6px;
+    width: 24px;
+}
+
+.ticket-info.ccnum {
+    background: #2a9fd6;
+}
+
+.ticket-info.btc,
+.ticket-info.ltc,
+.ticket-info.xmr,
+.ticket-info.txid {
+    background-color: #93c;
+}
+
+.ticket-info.btc,
+.ticket-info.ltc,
+.ticket-info.xmr {
+    vertical-align: bottom;
+}
+
+.ticket-info.btc::before {
+    content: url(/css/crypto-icons/btc.svg)
+}
+
+.ticket-info.xmr::before {
+    content: url(/css/crypto-icons/xmr.svg)
+}
+
+.ticket-info.ccnum::before {
+    text-decoration: none;
+    font-family: FontAwesome;
+    content: "\f09d";
+}
+
+.ticket-info.ltc::before {
+    content: url(/css/crypto-icons/ltc.svg)
+}
+
+.ticket-info.txid::before {
+    content: "Tx";
+}
+
+.copy-button {
+    color: #2a9fd6;
+    cursor: pointer;
+}
+
+.link {
+    color: #2a9fd6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.myblock {
+    display: block;
+}
+
+.padding-0 {
+    padding: 0px !important;
+}
+
+.display_inline {
+    display: inline;
+}
+
+.bold {
+    font-weight: 900 !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.sque {
+    background-color: #000000;
+    /*background-image:url(../images/background.png);*/
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.pagination {
+    margin-top: 0px;
+}
+
+.breadcrumb {
+    margin-bottom: 0px;
+}
+
+.logo {}
+
+.tdsmall {
+    font-size: 11px;
+}
+
+.news-prev {
+    padding-right: 20px;
+}
+
+.noty_width {
+    width: 250px !important;
+}
+
+.ui-autocomplete {
+    font-size: 12px !important;
+    max-height: 250px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+}
+
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+
+* html .ui-autocomplete {
+    height: 250px;
+}
+
+.tdsmall .label {
+    font-size: 1em;
+}
+
+.navbar {
+    max-width: 100vw;
+}
+
+.checker-info {
+    position: absolute;
+    right: 5px;
+}
+
+@media (max-width: 980px) {
+    .checker-info {
+        clear: both;
+        text-align: center;
+        position: relative;
+        width: 83vw;
+    }
+}
+
+div.sticky {
+    border: 1px dotted;
+    padding: 4px 20px;
+}
+
+.sticky h4 .label {
+    font-size: 12px;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed ! important;
+}

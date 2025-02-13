@@ -1,0 +1,70 @@
+﻿    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+
+<link rel="stylesheet" type="text/css" href="styles/core.css">
+
+<link rel="stylesheet" type="text/css" href="styles/login.css">
+
+<title>VClub</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        
+
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+       
+
+    </head>
+    <body>
+
+
+   <center> <div class="container">
+        
+        
+        <br><br><br><br>
+        
+<div class="row">
+    <div class="col-md-12 ">
+        
+        <div class="text registration" style="margin-bottom:20px;">
+            Registration: <strong>Open</strong>, Registration Fee:
+            <strong>50$</strong><br>
+            <span style="color:red;">Please note inactive users without balance will be deletedafter several days</span>
+        </div>
+
+
+               <form id="yw0" name="register" action="processreg.php" method="post">
+<input type="hidden" value="SlAzYkZyR21nTmRfaVlmYnNmMHdyZU5jTWdFRFA5cTb7UOWIZ9eDlW1qUAykhyc9Tdo9kzPxUCYIAXhJF-4Z9Q==" name="reg">                    <div style="width:453px;">
+                <div class="control-group-inline">
+                    <div class="control-group"><label class="control-label required" for="P_SignInForm_username">Username <span class="required">*</span></label><div class="controls"><input id="inputUsername" class="form-control" placeholder="Username*" name="txtUsername" type="text"></div></div>                    <div class="control-group"><label class="control-label required" for="P_SignInForm_email">Email <span class="required">*</span></label><div class="controls"><input id="inputEmail" class="form-control" placeholder="Jabber*" style="margin-left:15px;" name="txtEmail" type="text"></div></div>                </div>
+                <div class="control-group-inline">
+                    <div class="control-group"><label class="control-label required" for="P_SignInForm_password">Password <span class="required">*</span></label><div class="controls"><input id="inputPassword" class="form-control" placeholder="Password*" name="txtPassword" type="password" maxlength="64"></div></div>                    <div class="control-group"><label class="control-label required" for="P_SignInForm_password2">Repeat password <span class="required">*</span></label><div class="controls"><input id="inputPassword2" class="form-control" placeholder="Re-Password*" style="margin-left:15px;" name="txtPassword" type="password" maxlength="64"></div></div></div>
+                               
+                                              
+                                <div class="control-group-inline">
+                    <div class="control-group"><label class="control-label required" for="P_SignInForm_verifyCode">Captcha <span class="required">*</span></label><div class="controls"><input id="inputCaptcha" autocomplete="off" class="form-control half" placeholder="Captcha*" name="capcha" type="text"></div></div>                   
+                    <div class="captcha" id="captcha"><img id="capcha" src="./captcha.php?width=152&height=60&characters=6" alt=""></div>
+                    <div style="display:inline-block; float:right; margin-left:15px;"><div class="form-actions"><button class="green btn" style="margin-right:3px; width:210px; float:right;" type="submit" name="register">Register</button></div></div>
+                    <script>$(function () {
+                            $('#captcha').insertAfter('#inputCaptcha');
+                        });</script>
+               
+             <div class="alert alert-danger">
+                    <a href='https://xmpp.org/about/technology-overview/' target='_blank'>Jabber (XMPP)</a> <strong>& EMAIL</strong>. You will not be able to reset your password and get access to your account without it. You can register a jabber on some site from <a href='https://list.jabber.at/' target='_blank'>this list</a> or find a suggestion on a forum                    </div> 
+                     </div>
+            </div>        
+                <br>
+        
+        </form>
+
+    </div>
+</div>    </div>
+
+</center>
+    
+</body>
+    </html>

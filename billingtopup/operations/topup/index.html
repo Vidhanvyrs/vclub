@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/shopp/css/flags/flags.css" />
+    <link rel="stylesheet" type="text/css" href="/shopp/usercp/auth/extra.css" />
+    <script type="text/javascript" src="/shopp/usercp/auth/extra.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="/shopp/valid/jquery-ui-1.10.0.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="/shopp/shop/ccs/styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/shopp/valid/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/shopp/valid/bootswatch.min.css" />
+    <link rel="stylesheet" type="text/css" href="/shopp/valid/font-one.min.css" />
+    <script type="text/javascript" src="/shopp/valid/jquery.min.js"></script>
+    <script type="text/javascript" src="/shopp/valid/jquery.noty.js"></script>
+    <link rel="stylesheet" type="text/css" href="/shopp/shop/ccs/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/shopp/shop/ccs/styles/superfish.css" />
+    <script type="text/javascript" src="/shopp/shop/ccs/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/shopp/shop/ccs/js/jquery.popupWindow.js"></script>
+    <script type="text/javascript" src="/shopp/shop/ccs/js/main.js"></script>
+    <script type="text/javascript" src="/shopp/shop/ccs/js/superfish.js"></script>
+    <link rel="stylesheet" href="styling.css" />
+
+
+
+    <title>VClub1</title>
+
+
+    <script src="/shopp/valid/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+
+                    <li class="current"><a href="/news/news/index.html"> News </a></li>
+                    <li class="current"><a href="/preorder/shop/ccs/preorder.html"> Preorder </a></li>
+
+                    <li class="nav-item">
+                        <a href="/novbv/novbv/index.html" class="nav-link" style="">NoVBV Bins <span class="badge badge-pill badge-danger">new</span></a>
+                    </li>
+
+                    <li style="position: relative; display: inline-block;">
+                        <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                            CCS <span class="caret"></span>
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="/shopp/shop/ccs/index.html">Buy CCS</a></li>
+                            <li><a href="/cartccs/shop/ccs/cart.html">Cart CCS</a></li>
+                            <li><a href="/orderccs/shop/ccs/mycards.html">Orders CCS</a></li>
+                            <li><a href="/binlookup/shop/ccs/binlookup.html">Binlookup</a></li>
+                            <li><a href="/binpreorder/shop/ccs/preorder.html">Bin Preorder</a></li>
+                        </ul>
+                    </li>
+                    
+                    <script>
+                        function toggleDropdown(element) {
+                            let dropdown = element.nextElementSibling;
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        }
+                    </script>
+                    
+                    <style>
+                        #dropdown-menu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(28, 28, 28);
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            border: 1px solid #000;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            width: 150px;
+                        }
+                    
+                        #dropdown-menu li {
+                            width: 100%;
+                        }
+                    
+                        #dropdown-menu li a {
+                            display: block;
+                            padding: 4px;
+                            color: white;
+                            text-decoration: none;
+                            text-align: left;
+                        }
+                    
+                        #dropdown-menu li:hover {
+                            background-color: rgb(0, 201, 252);
+                        }
+                    
+                        #dropdown-menu li:hover a {
+                            color: white;
+                        }
+                    </style>
+                    
+                    
+                    
+
+                    <li class="current"><a href="/refund/shop/ccs/refund-policy.html"> Refund policy </a></li>
+
+                    <li style="position: relative; display: inline-block;">
+                        <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                            Socks 5 <span class="caret"></span>
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="/shopp/shop/ccs/index.html">Buy Socks 5</a></li>
+                            <li><a href="/cartccs/shop/ccs/cart.html">Order Socks 5</a></li>
+                        </ul>
+                    </li>
+                    
+                    <script>
+                        function toggleDropdown(element) {
+                            let dropdown = element.nextElementSibling;
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        }
+                    </script>
+                    
+                    <style>
+                        #dropdown-menu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(28, 28, 28);
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            border: 1px solid #000;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            width: 150px;
+                        }
+                    
+                        #dropdown-menu li {
+                            width: 100%;
+                        }
+                    
+                        #dropdown-menu li a {
+                            display: block;
+                            padding: 4px;
+                            color: white;
+                            text-decoration: none;
+                            text-align: left;
+                        }
+                    
+                        #dropdown-menu li:hover {
+                            background-color: rgb(0, 201, 252);
+                        }
+                    
+                        #dropdown-menu li:hover a {
+                            color: white;
+                        }
+                    </style>
+
+
+                    <li style="position: relative; display: inline-block;">
+                        <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                            Billing <span class="caret"></span>
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="/billingtopup/operations/topup/index.html">Topup</a></li>
+                            <li><a href="/history/operations/history/index.html">History</a></li>
+                        </ul>
+                    </li>
+                    
+                    <script>
+                        function toggleDropdown(element) {
+                            let dropdown = element.nextElementSibling;
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        }
+                    </script>
+                    
+                    <style>
+                        #dropdown-menu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(28, 28, 28);
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            border: 1px solid #000;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            width: 150px;
+                        }
+                    
+                        #dropdown-menu li {
+                            width: 100%;
+                        }
+                    
+                        #dropdown-menu li a {
+                            display: block;
+                            padding: 4px;
+                            color: white;
+                            text-decoration: none;
+                            text-align: left;
+                        }
+                    
+                        #dropdown-menu li:hover {
+                            background-color: rgb(0, 201, 252);
+                        }
+                    
+                        #dropdown-menu li:hover a {
+                            color: white;
+                        }
+                    </style>
+                    
+
+                    <li style="position: relative; display: inline-block;">
+                        <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                            Support <span class="caret"></span>
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="/supportticket/support/tickets/index.html">My Ticket</a></li>
+                            <li><a href="/cartccs/shop/ccs/cart.html">Create Ticket </a></li>
+                        </ul>
+                    </li>
+                    
+                    <script>
+                        function toggleDropdown(element) {
+                            let dropdown = element.nextElementSibling;
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        }
+                    </script>
+                    
+                    <style>
+                        #dropdown-menu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(28, 28, 28);
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            border: 1px solid #000;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            width: 150px;
+                        }
+                    
+                        #dropdown-menu li {
+                            width: 100%;
+                        }
+                    
+                        #dropdown-menu li a {
+                            display: block;
+                            padding: 4px;
+                            color: white;
+                            text-decoration: none;
+                            text-align: left;
+                        }
+                    
+                        #dropdown-menu li:hover {
+                            background-color: rgb(0, 201, 252);
+                        }
+                    
+                        #dropdown-menu li:hover a {
+                            color: white;
+                        }
+                    </style>
+
+
+                    <li style="position: relative; display: inline-block;">
+                        <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                            Profile <span class="caret"></span>
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="/shopp/shop/ccs/index.html">Settings</a></li>
+                            <li><a href="/cartccs/shop/ccs/cart.html">Logout</a></li>
+                        </ul>
+                    </li>
+                    
+                    <script>
+                        function toggleDropdown(element) {
+                            let dropdown = element.nextElementSibling;
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        }
+                    </script>
+                    
+                    <style>
+                        #dropdown-menu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(28, 28, 28);
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            border: 1px solid #000;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            width: 150px;
+                        }
+                    
+                        #dropdown-menu li {
+                            width: 100%;
+                        }
+                    
+                        #dropdown-menu li a {
+                            display: block;
+                            padding: 4px;
+                            color: white;
+                            text-decoration: none;
+                            text-align: left;
+                        }
+                    
+                        #dropdown-menu li:hover {
+                            background-color: rgb(0, 201, 252);
+                        }
+                    
+                        #dropdown-menu li:hover a {
+                            color: white;
+                        }
+                    </style>
+
+<li style="position: absolute; right: 500px; top: 50%; transform: translateY(-50%);">
+    <img src="/shopp/shop/ccs/united-states.png" alt="US Flag" style="width: 15px; height: auto; display: block;">
+</li>
+
+
+                </ul>
+
+    </div>
+
+        </div>
+          
+
+ 
+      </div>
+
+ 
+    </div>
+    <div class="tabs">
+        <button class="tab active">
+          <i class="fa fa-bitcoin"></i> BITCOIN
+        </button>
+        <button class="tab">
+          <img src="/billingtopup/assets/monero.svg" alt="Monero icon" style="width: 16px"/> MONERO <span class="new">new</span>
+        </button>
+      </div>
+      
+      <div class="container1">
+        <h2>PLEASE SEND YOUR PAYMENT OF BTC TO BITCOIN ADDRESS:</h2>
+        <p class="notice">
+          Notice: Every time, when you want to Topup, please, check address on this page. It will be changed every time after each transaction.
+        </p>
+        <p class="fee">
+          Exchange fee is 3%. You need 2 confirmations of transaction in the system to deposit money to your account.
+        </p>
+    
+        <div class="btc-address">
+            3DrTsHjhCt1sJPEzZ5EZryrvErB4wEqtjq
+        </div>
+    
+        <p class="btc-rate">1BTC = 97056.0 $</p>
+        <p class="info">
+          Payments from Bitcoin's takes about 10-15 mins, please contact with support if you don't receive your funds only after 15 mins.
+        </p>
+    
+        <h3>To fill up your shop balance with BTC payment you need to:</h3>
+        <ol>
+          <li>Send coins to your address shown below.</li>
+          <li>After your transaction(s) get 2 confirmations - your balance will be added to your account automatically.</li>
+        </ol>
+    
+        <h3>Transactions waiting confirmation:</h3>
+        <div class="table">
+          <div class="table-header">
+            <span>Date</span>
+            <span>Address/Batch/Amount</span>
+            <span>Status</span>
+          </div>
+          <div class="table-row">
+            No unconfirmed transactions yet
+          </div>
+        </div>
+    
+        <div class="qr-code">
+          <img src="/billingtopup/operations/topup/qrcode.jpg" alt="Bitcoin QR Code" />
+        </div>
+      </div>
+      <script>
+        // Get all tab buttons
+        const tabs = document.querySelectorAll('.tab');
+        
+        // Add click event listener to each tab
+        tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+            // Remove active class from all tabs
+            tabs.forEach(t => t.classList.remove('active'));
+            // Add active class to clicked tab
+            tab.classList.add('active');
+          });
+        });
+      </script>
+  </body>
+</html>

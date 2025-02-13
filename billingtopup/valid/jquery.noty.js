@@ -1,0 +1,1 @@
+No Content: https://vclubshop.ru/valid/jquery.noty.js

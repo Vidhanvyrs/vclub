@@ -1,0 +1,764 @@
+
+
+ 
+ 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/flags/flags.css" />
+   <link rel="stylesheet" type="text/css" href="/usercp/auth/extra.css" />
+    <script type="text/javascript" src="/usercp/auth/extra.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="/valid/jquery-ui-1.10.0.custom.min.css" />
+<link rel="stylesheet" type="text/css" href="./styles/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/valid/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/valid/bootswatch.min.css" />
+<link rel="stylesheet" type="text/css" href="/valid/font-one.min.css" />
+<script type="text/javascript" src="/valid/jquery.min.js"></script>
+<script type="text/javascript" src="/valid/jquery.noty.js"></script>
+<link rel="stylesheet" type="text/css" href="./styles/main.css" />
+		<link rel="stylesheet" type="text/css" href="./styles/superfish.css" />
+		<script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.popupWindow.js"></script>
+		<script type="text/javascript" src="./js/main.js" ></script>
+		<script type="text/javascript" src="./js/superfish.js"></script>
+
+
+<title>VClub</title>
+    
+
+            <script src="/valid/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/valid/html5shiv.js"></script>
+      <script src="/valid/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+<body> 
+   
+ <div class="support-button"></div>
+    <div class="modal fade form-popupS" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+        <div class="modal-supp">
+            <p><strong>If you have any problem please add us on or <a style="color:#2a9fd6;" href="/support/create/"> Create Ticket. </a></strong></p>
+            <p><strong><span style="color: #ff0000;">JABBER1:</span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a193f3a3a25383e0a1c29263f2864393f3a3a25383e">[email&#160;protected]</a><a href=""><br></a></strong></p>
+            <p><strong><span style="color: #ff0000;">JABBER2:</span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="35664045455a4741077563565940571b464045455a4741">[email&#160;protected]</a></strong></p>
+        </div>
+    </div>
+
+    <div class="invite-button"></div>
+    <div class="modal fade form-popupI" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+        <div class="modal-inv alert alert-success" ><br>
+           <h5 style="color: #ffffff;"> Please note, we use invitation code system during the registration. You can share your unique invitation code to invite your friends.</h5>
+            <h2 style="color: #ffffff;"><strong>No code available Please remember u can only use it 2 times. Then it would be replaced with a new one.</strong></h2><br>
+        </div>
+    </div>
+    
+
+
+
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>$(document).ready(function() { $('.invite-button, .invite-href').click(function(){$('.form-popupI').modal({ show: true, });}); }); </script>
+<!-- End of popup panel with info for users -->
+
+      
+   
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+      <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+
+              <li class="current"><a href="/news/news/index.html"> News </a></li>
+              <li class="current"><a href="/preorder/shop/ccs/preorder.html"> Preorder </a></li>
+
+              <li class="nav-item">
+                  <a href="/novbv/novbv/index.html" class="nav-link" style="">NoVBV Bins <span class="badge badge-pill badge-danger">new</span></a>
+              </li>
+
+              <li style="position: relative; display: inline-block;">
+                  <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                      CCS <span class="caret"></span>
+                  </a>
+                  <ul id="dropdown-menu">
+                      <li><a href="/shopp/shop/ccs/index.html">Buy CCS</a></li>
+                      <li><a href="/cartccs/shop/ccs/cart.html">Cart CCS</a></li>
+                      <li><a href="/orderccs/shop/ccs/mycards.html">Orders CCS</a></li>
+                      <li><a href="/binlookup/shop/ccs/binlookup.html">Binlookup</a></li>
+                      <li><a href="/binpreorder/shop/ccs/preorder.html">Bin Preorder</a></li>
+                  </ul>
+              </li>
+              
+              <script>
+                  function toggleDropdown(element) {
+                      let dropdown = element.nextElementSibling;
+                      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                  }
+              </script>
+              
+              <style>
+                  #dropdown-menu {
+                      display: none;
+                      position: absolute;
+                      top: 100%;
+                      left: 0;
+                      background-color: rgb(28, 28, 28);
+                      list-style: none;
+                      padding: 0;
+                      margin: 0;
+                      border: 1px solid #000;
+                      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                      width: 150px;
+                  }
+              
+                  #dropdown-menu li {
+                      width: 100%;
+                  }
+              
+                  #dropdown-menu li a {
+                      display: block;
+                      padding: 4px;
+                      color: white;
+                      text-decoration: none;
+                      text-align: left;
+                  }
+              
+                  #dropdown-menu li:hover {
+                      background-color: rgb(0, 201, 252);
+                  }
+              
+                  #dropdown-menu li:hover a {
+                      color: white;
+                  }
+              </style>
+              
+              
+              
+
+              <li class="current"><a href="/refund/shop/ccs/refund-policy.html"> Refund policy </a></li>
+
+              <li style="position: relative; display: inline-block;">
+                  <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                      Socks 5 <span class="caret"></span>
+                  </a>
+                  <ul id="dropdown-menu">
+                      <li><a href="/shopp/shop/ccs/index.html">Buy Socks 5</a></li>
+                      <li><a href="/cartccs/shop/ccs/cart.html">Order Socks 5</a></li>
+                  </ul>
+              </li>
+              
+              <script>
+                  function toggleDropdown(element) {
+                      let dropdown = element.nextElementSibling;
+                      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                  }
+              </script>
+              
+              <style>
+                  #dropdown-menu {
+                      display: none;
+                      position: absolute;
+                      top: 100%;
+                      left: 0;
+                      background-color: rgb(28, 28, 28);
+                      list-style: none;
+                      padding: 0;
+                      margin: 0;
+                      border: 1px solid #000;
+                      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                      width: 150px;
+                  }
+              
+                  #dropdown-menu li {
+                      width: 100%;
+                  }
+              
+                  #dropdown-menu li a {
+                      display: block;
+                      padding: 4px;
+                      color: white;
+                      text-decoration: none;
+                      text-align: left;
+                  }
+              
+                  #dropdown-menu li:hover {
+                      background-color: rgb(0, 201, 252);
+                  }
+              
+                  #dropdown-menu li:hover a {
+                      color: white;
+                  }
+              </style>
+
+
+              <li style="position: relative; display: inline-block;">
+                  <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                      Billing <span class="caret"></span>
+                  </a>
+                  <ul id="dropdown-menu">
+                      <li><a href="/billingtopup/operations/topup/index.html">Topup</a></li>
+                      <li><a href="/history/operations/history/index.html">History</a></li>
+                  </ul>
+              </li>
+              
+              <script>
+                  function toggleDropdown(element) {
+                      let dropdown = element.nextElementSibling;
+                      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                  }
+              </script>
+              
+              <style>
+                  #dropdown-menu {
+                      display: none;
+                      position: absolute;
+                      top: 100%;
+                      left: 0;
+                      background-color: rgb(28, 28, 28);
+                      list-style: none;
+                      padding: 0;
+                      margin: 0;
+                      border: 1px solid #000;
+                      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                      width: 150px;
+                  }
+              
+                  #dropdown-menu li {
+                      width: 100%;
+                  }
+              
+                  #dropdown-menu li a {
+                      display: block;
+                      padding: 4px;
+                      color: white;
+                      text-decoration: none;
+                      text-align: left;
+                  }
+              
+                  #dropdown-menu li:hover {
+                      background-color: rgb(0, 201, 252);
+                  }
+              
+                  #dropdown-menu li:hover a {
+                      color: white;
+                  }
+              </style>
+              
+
+              <li style="position: relative; display: inline-block;">
+                  <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                      Support <span class="caret"></span>
+                  </a>
+                  <ul id="dropdown-menu">
+                      <li><a href="/supportticket/support/tickets/index.html">My Ticket</a></li>
+                      <li><a href="/cartccs/shop/ccs/cart.html">Create Ticket </a></li>
+                  </ul>
+              </li>
+              
+              <script>
+                  function toggleDropdown(element) {
+                      let dropdown = element.nextElementSibling;
+                      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                  }
+              </script>
+              
+              <style>
+                  #dropdown-menu {
+                      display: none;
+                      position: absolute;
+                      top: 100%;
+                      left: 0;
+                      background-color: rgb(28, 28, 28);
+                      list-style: none;
+                      padding: 0;
+                      margin: 0;
+                      border: 1px solid #000;
+                      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                      width: 150px;
+                  }
+              
+                  #dropdown-menu li {
+                      width: 100%;
+                  }
+              
+                  #dropdown-menu li a {
+                      display: block;
+                      padding: 4px;
+                      color: white;
+                      text-decoration: none;
+                      text-align: left;
+                  }
+              
+                  #dropdown-menu li:hover {
+                      background-color: rgb(0, 201, 252);
+                  }
+              
+                  #dropdown-menu li:hover a {
+                      color: white;
+                  }
+              </style>
+
+
+              <li style="position: relative; display: inline-block;">
+                  <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                      Profile <span class="caret"></span>
+                  </a>
+                  <ul id="dropdown-menu">
+                      <li><a href="/shopp/shop/ccs/index.html">Settings</a></li>
+                      <li><a href="/cartccs/shop/ccs/cart.html">Logout</a></li>
+                  </ul>
+              </li>
+              
+              <script>
+                  function toggleDropdown(element) {
+                      let dropdown = element.nextElementSibling;
+                      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                  }
+              </script>
+              
+              <style>
+                  #dropdown-menu {
+                      display: none;
+                      position: absolute;
+                      top: 100%;
+                      left: 0;
+                      background-color: rgb(28, 28, 28);
+                      list-style: none;
+                      padding: 0;
+                      margin: 0;
+                      border: 1px solid #000;
+                      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                      width: 150px;
+                  }
+              
+                  #dropdown-menu li {
+                      width: 100%;
+                  }
+              
+                  #dropdown-menu li a {
+                      display: block;
+                      padding: 4px;
+                      color: white;
+                      text-decoration: none;
+                      text-align: left;
+                  }
+              
+                  #dropdown-menu li:hover {
+                      background-color: rgb(0, 201, 252);
+                  }
+              
+                  #dropdown-menu li:hover a {
+                      color: white;
+                  }
+              </style>
+
+<li style="position: absolute; right: 500px; top: 50%; transform: translateY(-50%);">
+<img src="/shopp/shop/ccs/united-states.png" alt="US Flag" style="width: 15px; height: auto; display: block;">
+</li>
+
+
+          </ul>
+
+</div>
+
+  </div>
+    
+
+
+</div>
+
+
+</div>
+
+        
+
+<br><br>
+     
+  </body>
+</html>
+
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="https://unitedshop.su/css/cyborg/bootstrap.css" />
+
+
+
+</head>
+
+
+  
+<body>
+   
+ <div class="container">
+             
+            <div class="well">
+        <h2>
+            Refund policy (last update: 29-02-2024)        </h2>
+        <div>
+            <article style="font-size: 16px;">
+<p style="text-align: left;"><span style="color: #ff0000;"><strong>WE DO NOT REFUND CARDS IN SUPPORT TICKETS!!!</strong></span></p>
+<p>You have 2 days to open the card you bought in shop and <strong>5 minutes</strong> after you open a card to request a check of it. After 5 minutes we are not review any requests for the refunds.</p>
+<p>We <strong>DO NOT GUARANTEE</strong> that cards have any balance / funds. We also <strong>DO NOT REFUND</strong> or replace for cards with invalid address, state, city, zip, phone, dob, ssn, mmn, name and etc.</p>
+<p>We <strong>DO NOT REFUND</strong> next auth codes for all bases:</p>
+<table style="width: 100%; border: 1px solid; " border="1px" width="100%" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td><strong>AUTH CODE</strong></td>
+<td><strong>AUTH RESULT</strong></td>
+</tr>
+<tr>
+<td>&nbsp;00</td>
+<td>&nbsp;Approved and completed</td>
+</tr>
+<tr>
+<td>&nbsp;03</td>
+<td>&nbsp;Invalid merchant ID</td>
+</tr>
+<tr>
+<td>&nbsp;08</td>
+<td>&nbsp;Honor MasterCard with ID</td>
+</tr>
+<tr>
+<td>&nbsp;10</td>
+<td>&nbsp;Partial approval</td>
+</tr>
+<tr>
+<td>&nbsp;11</td>
+<td>&nbsp;VIP approval</td>
+</tr>
+<tr>
+<td>&nbsp;13</td>
+<td>&nbsp;Invalid amount</td>
+</tr>
+<tr>
+<td>&nbsp;28</td>
+<td>&nbsp;File is temporarily unavailable</td>
+</tr>
+<tr>
+<td>&nbsp;39</td>
+<td>&nbsp;No credit account</td>
+</tr>
+<tr>
+<td>&nbsp;51</td>
+<td>&nbsp;Insufficient funds</td>
+</tr>
+<tr>
+<td>&nbsp;52</td>
+<td>&nbsp;No checking account</td>
+</tr>
+<tr>
+<td>&nbsp;53</td>
+<td>&nbsp;No savings account</td>
+</tr>
+<tr>
+<td>&nbsp;56</td>
+<td>&nbsp;Transaction not supported by institution</td>
+</tr>
+<tr>
+<td>&nbsp;57</td>
+<td>&nbsp;Transaction not permitted on card</td>
+</tr>
+<tr>
+<td>&nbsp;58</td>
+<td>&nbsp;Transaction not permitted to terminal</td>
+</tr>
+<tr>
+<td>&nbsp;59</td>
+<td>&nbsp;Suspected fraud</td>
+</tr>
+<tr>
+<td>&nbsp;61</td>
+<td>&nbsp;Ecveeds withdrawal limit</td>
+</tr>
+<tr>
+<td>&nbsp;63</td>
+<td>&nbsp;Security violation</td>
+</tr>
+<tr>
+<td>&nbsp;65</td>
+<td>&nbsp;Exceeds frequency limit</td>
+</tr>
+<tr>
+<td>&nbsp;82</td>
+<td>&nbsp;Time-out at issuer</td>
+</tr>
+<tr>
+<td>&nbsp;83</td>
+<td>&nbsp;Network connection problem</td>
+</tr>
+<tr>
+<td>&nbsp;85</td>
+<td>&nbsp;No reason to decline</td>
+</tr>
+<tr>
+<td>&nbsp;91</td>
+<td>&nbsp;Issuer is unavailable</td>
+</tr>
+<tr>
+<td>&nbsp;93</td>
+<td>&nbsp;Violation of law</td>
+</tr>
+<tr>
+<td>&nbsp;96</td>
+<td>&nbsp;System malfunction</td>
+</tr>
+<tr>
+<td>&nbsp;98</td>
+<td>&nbsp;Card was checked less that 3 hours ago</td>
+</tr>
+<tr>
+<td>&nbsp;99</td>
+<td>&nbsp;Service under maintenance</td>
+</tr>
+<tr>
+<td>&nbsp;R0</td>
+<td>&nbsp;Customer requested stop of specific recurring payment</td>
+</tr>
+<tr>
+<td>&nbsp;R1</td>
+<td>&nbsp;Customer requested stop of all recurring payments from specific merchant</td>
+</tr>
+<tr>
+<td>T0</td>
+<td>First check is OK and has been converted</td>
+</tr>
+<tr>
+<td>T3</td>
+<td>Amount greater than the limit</td>
+</tr>
+<tr>
+<td>T4</td>
+<td>Unpaid items; failed negative file check</td>
+</tr>
+<tr>
+<td>T5</td>
+<td>Duplicate check number</td>
+</tr>
+<tr>
+<td>T7</td>
+<td>Too many checks</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>We <strong>DO NOT REFUND</strong> most codes for cards from <span style="color: #ff6600;"><strong>GOLD</strong></span> bases.</p>
+<p>For <span style="color: #ff6600;"><strong>GOLD</strong></span> bases we refund only next codes:</p>
+<table style="width: 100%; border: 1px solid;" border="1px" width="100%" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td><strong>AUTH CODE</strong></td>
+<td><strong>AUTH RESULT</strong></td>
+</tr>
+<tr>
+<td>05</td>
+<td>Do not honour (we <strong>DO NOT REFUND this code for UK, CH and EU</strong> countries)</td>
+</tr>
+<tr>
+<td>07</td>
+<td>Pick up card; special condition (fraud account)</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Invalid card number</td>
+</tr>
+<tr>
+<td>15</td>
+<td>No such issuer</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Lost card; pick up (fraud account)</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Stolen card; pick up (fraud account)</td>
+</tr>
+<tr>
+<td>46</td>
+<td>Closed account</td>
+</tr>
+<tr>
+<td>54</td>
+<td>Expired card</td>
+</tr>
+<tr>
+<td>55</td>
+<td>Incorrect PIN</td>
+</tr>
+<tr>
+<td>78</td>
+<td>No account</td>
+</tr>
+<tr>
+<td>80</td>
+<td>Invalid date</td>
+</tr>
+<tr>
+<td>97</td>
+<td>Invalid CVV</td>
+</tr>
+<tr>
+<td>N7</td>
+<td>CVV2 Value supplied is invalid</td>
+</tr>
+</tbody>
+</table>
+</article>        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+   
+    
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+
+<script type="text/javascript" src="/valid/jquery.min.js"></script>
+<script type="text/javascript" src="/valid/jquery.noty.js"></script>
+
+
+
+<title>VClub</title>
+    
+
+            <script src="/valid/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/valid/html5shiv.js"></script>
+      <script src="/valid/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body> 
+   
+
+<style>
+    .alpha60 {
+
+        background: #45484d;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDg0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));
+        background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%);
+        background: -o-linear-gradient(top, #45484d 0%,#000000 100%);
+        background: -ms-linear-gradient(top, #45484d 0%,#000000 100%);
+        background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+                bottom:0px;
+                position: fixed;
+        width: 100%;
+        padding-left:5px; padding-right:5px;
+        padding-top:3px;
+        padding-bottom:3px;
+margin-left:0px;
+    }
+    
+    
+      
+        .afood {
+  color:#66FF33;
+  text-decoration:none;
+  background-color:transparent
+}
+.afood:hover {
+  color:#88FF55;
+  text-decoration:none
+}
+
+
+</style>
+
+<div class="alpha60">
+    <div class="container">
+       
+            
+            
+        
+            
+             <div>
+                                     <div class="label label-default" style="display:block; float:left;  color:#B8B8B8; border: 1px #262626 solid;"> <span style="color:red; font-size:18px;"><strong ></strong>SELLER?</strong></span>
+                <a class="afood" href="/shop/ccs/sellyourstuff.php"><span><strong style="font-weight:bold; font-size:18px;" >SELL YOUR STUFF WITH US</strong></span></a>
+            </div>                       
+                        </div>
+                        
+                        
+                        <div style="display:block; float:right;">Balance: <strong style="font-size:14px;color:#32CD32;" >0.00 $ </strong>&nbsp;<a style="color:#FFFFFF;font-size:14px; "  href="/operations/topup/"> <img src="/images/add.png"></a>
+                    </div>
+        
+    </div>
+      
+
+</div>                </div>
+        
+        <script>
+        //AJAX_POINTER
+        var ajaxNoty;
+        var ajaxError = 'Error while during processing your request.'
+        //NOTIFY:
+        function myNotify(text,type,timeout) {
+            timeout = (!timeout) ? false : timeout * 1000;
+            return noty({
+                    text: text,
+                    type: type,
+                    dismissQueue: true,
+                    layout: 'bottomRight',
+                    theme: 'default',
+                    timeout: timeout,
+                    template: '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
+                    animation: {
+                      open: {height: 'toggle'},
+                      close: {height: 'toggle'},
+                      easing: 'swing',
+                      speed: 0 // opening & closing animation speed
+                    }
+            });
+        }
+
+        function confirmAction(text) {
+           return noty({
+                        text: text,
+                        type: "confirm",
+                        dismissQueue: true,
+                        layout: 'center',
+                        theme: 'default',
+                        timeout: 0,
+                        template: '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
+                        buttons: [
+                          {addClass: 'btn btn-primary', text: 'Ok', onClick: function($noty) {
+                              return true;
+                              
+                            }
+                          },
+                          {addClass: 'btn btn-danger', text: 'Cancel', onClick: function($noty) {
+                              return false;
+                            }
+                          }
+                        ]
+            });
+        }
+        </script>      
+      
+
+  <script type="text/javascript">
+/*<![CDATA[*/
+$(".billing_point").addClass("red");
+jQuery(function($) {
+jQuery('#yw1').tab('show');
+});
+/*]]>*/
+</script>
+
+</body>
+</html>

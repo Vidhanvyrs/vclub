@@ -1,0 +1,926 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+
+
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/usercp/auth/extra.css" />
+    <script type="text/javascript" src="/usercp/auth/extra.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="/valid/jquery-ui-1.10.0.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/valid/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/valid/bootswatch.min.css" />
+    <link rel="stylesheet" type="text/css" href="/valid/font-one.min.css" />
+
+    <script type="text/javascript" src="/valid/jquery.min.js"></script>
+    <script type="text/javascript" src="/valid/jquery.noty.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/superfish.css" />
+    <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.popupWindow.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/superfish.js"></script>
+
+
+    <title>Vclub</title>
+
+
+    <script src="/valid/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/valid/html5shiv.js"></script>
+      <script src="/valid/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+
+    <a href="/shop/ccs/Create.php">
+        <div class="support-button"></div>
+
+    </a>
+
+
+
+
+    <!-- Start of popup panel with info for users -->
+
+
+    <a href="/usercp/main/details">
+        <div class="invite-button"></div>
+    </a>
+
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.invite-button, .invite-href').click(function() {
+                $('.form-popupI').modal({
+                    show: true,
+                });
+            });
+        });
+    </script>
+    <!-- End of popup panel with info for users -->
+
+
+
+
+
+     
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+
+                    <li class="current"><a href="/news/news/index.html"> News </a></li>
+                    <li class="current"><a href="/preorder/shop/ccs/preorder.html"> Preorder </a></li>
+
+                    <li class="nav-item">
+                        <a href="/novbv/novbv/index.html" class="nav-link" style="">NoVBV Bins <span class="badge badge-pill badge-danger">new</span></a>
+                    </li>
+
+                    <li style="position: relative; display: inline-block;">
+                        <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                            CCS <span class="caret"></span>
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="/shopp/shop/ccs/index.html">Buy CCS</a></li>
+                            <li><a href="/cartccs/shop/ccs/cart.html">Cart CCS</a></li>
+                            <li><a href="/orderccs/shop/ccs/mycards.html">Orders CCS</a></li>
+                            <li><a href="/binlookup/shop/ccs/binlookup.html">Binlookup</a></li>
+                            <li><a href="/binpreorder/shop/ccs/preorder.html">Bin Preorder</a></li>
+                        </ul>
+                    </li>
+                    
+                    <script>
+                        function toggleDropdown(element) {
+                            let dropdown = element.nextElementSibling;
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        }
+                    </script>
+                    
+                    <style>
+                        #dropdown-menu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(28, 28, 28);
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            border: 1px solid #000;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            width: 150px;
+                        }
+                    
+                        #dropdown-menu li {
+                            width: 100%;
+                        }
+                    
+                        #dropdown-menu li a {
+                            display: block;
+                            padding: 4px;
+                            color: white;
+                            text-decoration: none;
+                            text-align: left;
+                        }
+                    
+                        #dropdown-menu li:hover {
+                            background-color: rgb(0, 201, 252);
+                        }
+                    
+                        #dropdown-menu li:hover a {
+                            color: white;
+                        }
+                    </style>
+                    
+                    
+                    
+
+                    <li class="current"><a href="/refund/shop/ccs/refund-policy.html"> Refund policy </a></li>
+
+                    <li style="position: relative; display: inline-block;">
+                        <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                            Socks 5 <span class="caret"></span>
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="/shopp/shop/ccs/index.html">Buy Socks 5</a></li>
+                            <li><a href="/cartccs/shop/ccs/cart.html">Order Socks 5</a></li>
+                        </ul>
+                    </li>
+                    
+                    <script>
+                        function toggleDropdown(element) {
+                            let dropdown = element.nextElementSibling;
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        }
+                    </script>
+                    
+                    <style>
+                        #dropdown-menu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(28, 28, 28);
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            border: 1px solid #000;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            width: 150px;
+                        }
+                    
+                        #dropdown-menu li {
+                            width: 100%;
+                        }
+                    
+                        #dropdown-menu li a {
+                            display: block;
+                            padding: 4px;
+                            color: white;
+                            text-decoration: none;
+                            text-align: left;
+                        }
+                    
+                        #dropdown-menu li:hover {
+                            background-color: rgb(0, 201, 252);
+                        }
+                    
+                        #dropdown-menu li:hover a {
+                            color: white;
+                        }
+                    </style>
+
+
+                    <li style="position: relative; display: inline-block;">
+                        <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                            Billing <span class="caret"></span>
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="/billingtopup/operations/topup/index.html">Topup</a></li>
+                            <li><a href="/history/operations/history/index.html">History</a></li>
+                        </ul>
+                    </li>
+                    
+                    <script>
+                        function toggleDropdown(element) {
+                            let dropdown = element.nextElementSibling;
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        }
+                    </script>
+                    
+                    <style>
+                        #dropdown-menu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(28, 28, 28);
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            border: 1px solid #000;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            width: 150px;
+                        }
+                    
+                        #dropdown-menu li {
+                            width: 100%;
+                        }
+                    
+                        #dropdown-menu li a {
+                            display: block;
+                            padding: 4px;
+                            color: white;
+                            text-decoration: none;
+                            text-align: left;
+                        }
+                    
+                        #dropdown-menu li:hover {
+                            background-color: rgb(0, 201, 252);
+                        }
+                    
+                        #dropdown-menu li:hover a {
+                            color: white;
+                        }
+                    </style>
+                    
+
+                    <li style="position: relative; display: inline-block;">
+                        <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                            Support <span class="caret"></span>
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="/supportticket/support/tickets/index.html">My Ticket</a></li>
+                            <li><a href="/cartccs/shop/ccs/cart.html">Create Ticket </a></li>
+                        </ul>
+                    </li>
+                    
+                    <script>
+                        function toggleDropdown(element) {
+                            let dropdown = element.nextElementSibling;
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        }
+                    </script>
+                    
+                    <style>
+                        #dropdown-menu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(28, 28, 28);
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            border: 1px solid #000;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            width: 150px;
+                        }
+                    
+                        #dropdown-menu li {
+                            width: 100%;
+                        }
+                    
+                        #dropdown-menu li a {
+                            display: block;
+                            padding: 4px;
+                            color: white;
+                            text-decoration: none;
+                            text-align: left;
+                        }
+                    
+                        #dropdown-menu li:hover {
+                            background-color: rgb(0, 201, 252);
+                        }
+                    
+                        #dropdown-menu li:hover a {
+                            color: white;
+                        }
+                    </style>
+
+
+                    <li style="position: relative; display: inline-block;">
+                        <a style="cursor: pointer; padding: 15px; display: block;" onclick="toggleDropdown(this)">
+                            Profile <span class="caret"></span>
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="/shopp/shop/ccs/index.html">Settings</a></li>
+                            <li><a href="/cartccs/shop/ccs/cart.html">Logout</a></li>
+                        </ul>
+                    </li>
+                    
+                    <script>
+                        function toggleDropdown(element) {
+                            let dropdown = element.nextElementSibling;
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        }
+                    </script>
+                    
+                    <style>
+                        #dropdown-menu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(28, 28, 28);
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            border: 1px solid #000;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            width: 150px;
+                        }
+                    
+                        #dropdown-menu li {
+                            width: 100%;
+                        }
+                    
+                        #dropdown-menu li a {
+                            display: block;
+                            padding: 4px;
+                            color: white;
+                            text-decoration: none;
+                            text-align: left;
+                        }
+                    
+                        #dropdown-menu li:hover {
+                            background-color: rgb(0, 201, 252);
+                        }
+                    
+                        #dropdown-menu li:hover a {
+                            color: white;
+                        }
+                    </style>
+
+<li style="position: absolute; right: 500px; top: 50%; transform: translateY(-50%);">
+    <img src="/shopp/shop/ccs/united-states.png" alt="US Flag" style="width: 15px; height: auto; display: block;">
+</li>
+
+
+                </ul>
+
+    </div>
+
+        </div>
+          
+
+ 
+      </div>
+
+ 
+    </div>
+
+        
+
+<br><br>
+     
+  </body>
+</html>
+
+
+<head>
+    <link rel="stylesheet " type="text/css " href="style/bootstrap.css " />
+    <link rel="stylesheet " type="text/css " href="/news/css/flags.css " />
+    <link rel="stylesheet " type="text/css " href="css/lottery.css " />
+<link rel="stylesheet " type="text/css " href="css/jquery-ui-1.10.0.custom.min.css " />
+<link rel="stylesheet " type="text/css " href="css/style.css " />
+<link rel="stylesheet " type="text/css " href="css/font-awesome.min.css " />
+<link rel="stylesheet " type="text/css " href="css/bootstrap.min.css " />
+<link rel="stylesheet " type="text/css " href="css/font-awesome.min.css " />
+<link rel="stylesheet " type="text/css " href="/usercp/auth/extra.css " />
+    <script type="text/javascript " src="/usercp/auth/extra.js " defer></script>
+
+<script type="text/javascript " src="css/jquery.min.js "></script>
+<script type="text/javascript " src="css/chart.min.js "></script>
+
+
+<title>VClub</title>
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+   
+        <meta charset="utf-8 ">
+
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="css/html5shiv.js "></script>
+    <script src="css/respond.min.js "></script>
+    <![endif]-->
+    </head>
+    <body>
+<style>
+    .alpha60 {
+        z-index: 1000;
+        background: #45484d;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDg0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #000000));
+        background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
+        background: -o-linear-gradient(top, #45484d 0%, #000000 100%);
+        background: -ms-linear-gradient(top, #45484d 0%, #000000 100%);
+        background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
+     bottom: 0px;
+     position: fixed;
+        width: 100%;
+        padding-left: 3%;
+        padding-top: 3px;
+        padding-bottom: 4px;
+        
+    }
+    .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+
+}
+
+    
+</style>
+
+
+<div class="col-md-12 " style="padding-right: 70px; padding-left: 70px; ">
+
+          <div class="row ">
+<div class="col-md-8 ">
+    <div>
+        <h3><strong style="color: #dedace; ">News</strong></h3>
+    </div>
+   
+  
+  
+    <div class="well ">
+        <div id="yw1 " class="list-view ">
+ 
+            
+    
+
+					
+				
+						
+<div>
+
+             
+                   <div class="card-body ">
+                       
+                       
+            <h3>
+                <span style="color: #dedace; ">CC UPDATE/ОБНОВЛЕНИЕ СС    </span>                </h3>
+            <div class="row "><div style="font-size:13px; "><i class="fa fa-database " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Database name: <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstCity=&lstState=&txtZip=&base=US%2FMIX_(ZUK)_[Sniffed%2FFirsthand]&btnSearch=Search ">
+<strong style="color:#2a9fd6; ">FEB#US/MIX_(ZUK)_[Sniffed/Firsthand]</strong></a><br />
+
+ <i class="fa fa-bar-chart " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Validrate: <strong>76%</strong><br />
+<i class="fa fa-calendar-plus-o " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Updated at: <strong>2025/02/10</strong></td><br />
+
+<td><i class="fa fa-retweet " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Refundable: No<br /><i class="fa fa-flag " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd;
+                    "></i>Country list: <i class="fa fa-flag " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i><i title="UNITED STATES " class="flag-US "></i>  <i title="UNITED KINGDOM " class="flag-GB "></i>  <i title="SAUDI ARABIA " class="flag-SA "></i>  
+</div>
+
+</td><p style="text-align:center;color:#ff6600; ">332 FRESH HQ SNIFFED CARDS ADDED</p>
+
+</tr>  
+<br />
+				    </div>
+    </div>
+<div style="border-bottom:1px solid #282828; ">
+ </div>
+	</div>    
+                    
+    						
+<div>
+
+             
+                   <div class="card-body ">
+                       
+                       
+            <h3>
+                <span style="color: #dedace; ">CC UPDATE/ОБНОВЛЕНИЕ СС    </span>                </h3>
+            <div class="row "><div style="font-size:13px; "><i class="fa fa-database " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Database name: <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstCity=&lstState=&txtZip=&base=SALE%2FWORLDMIX_(OPM)_[Sniffed%2FFirsthand]&btnSearch=Search ">
+<strong style="color:#2a9fd6; ">FEB#SALE/WORLDMIX_(OPM)_[Sniffed/Firsthand]</strong></a><br />
+
+ <i class="fa fa-bar-chart " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Validrate: <strong>72%</strong><br />
+<i class="fa fa-calendar-plus-o " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Updated at: <strong>2025/02/08</strong></td><br />
+
+<td><i class="fa fa-retweet " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Refundable: No<br /><i class="fa fa-flag " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd;
+                    "></i>Country list: <i title="PUERTO RICO " class="flag-PR "></i>  <i title="FINLAND " class="flag-FI "></i>  <i title="HONG KONG " class="flag-HK "></i>  <i title="BURKINA FASO " class="flag-BF "></i>  <i title="BARBADOS " class="flag-BB "></i>  <i title="INDONESIA
+                    " class="flag-ID "></i>  <i title="SERBIA " class="flag-RS "></i>  <i title="ROMANIA " class="flag-RO "></i>  <i title="SLOVAKIA " class="flag-SK "></i>  <i title="LITHUANIA " class="flag-LT "></i>  <i title="BELGIUM " class="flag-BE
+                    "></i>  <i title="LATVIA " class="flag-LV "></i>  <i title="THAILAND " class="flag-TH "></i>  <i title="SWEDEN " class="flag-SE "></i>  <i title="ARGENTINA " class="flag-AR "></i>  <i title="SLOVENIA " class="flag-SI "></i>  <i title="DENMARK " class="flag-DK
+                    "></i>  <i title="JAPAN " class="flag-JP "></i>  <i title="ISRAEL " class="flag-IL "></i>  <i title="CANADA " class="flag-CA "></i>  <i title="EGYPT " class="flag-EG "></i>  <i title="GERMANY " class="flag-DE "></i>  <i title="SINGAPORE " class="flag-SG
+                    "></i>  <i title="TURKEY " class="flag-TR "></i>  <i title="NORWAY " class="flag-NO "></i>  <i title="SAUDI ARABIA " class="flag-SA "></i>  <i title="POLAND " class="flag-PL "></i>  <i title="PERU " class="flag-PE "></i>  <i title="CZECH REPUBLIC
+                    " class="flag-CZ "></i>  <i title="NETHERLANDS " class="flag-NL "></i>  <i title="MALAYSIA " class="flag-MY "></i>  <i title="JORDAN " class="flag-JO "></i>  <i title="SOUTH AFRICA " class="flag-ZA "></i>  <i title="BRAZIL " class="flag-BR
+                    "></i>  <i title="KUWAIT " class="flag-KW "></i>  <i title="SPAIN " class="flag-ES "></i>  <i title="NIGERIA " class="flag-NG "></i>  <i title="GREECE " class="flag-GR "></i>  <i title="FRANCE " class="flag-FR "></i>  <i title="BANGLADESH " class="flag-BD
+                    "></i>  <i title="AUSTRIA " class="flag-AT "></i>  <i title="UNITED STATES " class="flag-US "></i>  <i title="IRELAND " class="flag-IE "></i>  <i title="MEXICO " class="flag-MX "></i>  <i title="ITALY " class="flag-IT "></i>  <i title="UNITED KINGDOM
+                    " class="flag-GB "></i>  <i title="SRI LANKA " class="flag-LK "></i>  <i title="INDIA " class="flag-IN "></i>
+</div>
+
+</td><p style="text-align:center;color:#ff6600; ">387 FRESH HQ SNIFFED CARDS ADDED</p>
+
+</tr>  
+<br />
+				    </div>
+    </div>
+<div style="border-bottom:1px solid #282828; ">
+ </div>
+	</div>    
+                    
+    						
+<div>
+
+             
+                   <div class="card-body ">
+                       
+                       
+            <h3>
+                <span style="color: #dedace; ">BONUS    </span>                </h3>
+            <div class="row "><h2>BONUS UPTO 30% when TOPUP TODAY</h2><br />
+				    </div>
+    </div>
+<div style="border-bottom:1px solid #282828; ">
+ </div>
+	</div>    
+                    
+    						
+<div>
+
+             
+                   <div class="card-body ">
+                       
+                       
+            <h3>
+                <span style="color: #dedace; ">CC UPDATE/ОБНОВЛЕНИЕ СС    </span>                </h3>
+            <div class="row "><div style="font-size:13px; "><i class="fa fa-database " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Database name: <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstCity=&lstState=&txtZip=&base=USA_(pirka)_[Sniffed%2FFirsthand]&btnSearch=Search ">
+<strong style="color:#2a9fd6; ">FEB#USA_(pirka)_[Sniffed/Firsthand]</strong></a><br />
+
+ <i class="fa fa-bar-chart " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Validrate: <strong>51%</strong><br />
+<i class="fa fa-calendar-plus-o " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Updated at: <strong>2025/02/07</strong></td><br />
+
+<td><i class="fa fa-retweet " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Refundable: No<br /><i class="fa fa-flag " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd;
+                    "></i>Country list: <i title="UNITED KINGDOM " class="flag-GB "></i>  <i title="SAUDI ARABIA " class="flag-SA "></i>  <i title="UNITED STATES " class="flag-US "></i>  <i title="CANADA " class="flag-CA "></i>
+</div>
+
+</td><p style="text-align:center;color:#ff6600; ">543 FRESH HQ SNIFFED CARDS ADDED</p>
+
+</tr>  
+<br />
+				    </div>
+    </div>
+<div style="border-bottom:1px solid #282828; ">
+ </div>
+	</div>    
+                    
+    						
+<div>
+
+             
+                   <div class="card-body ">
+                       
+                       
+            <h3>
+                <span style="color: #dedace; ">CC UPDATE/ОБНОВЛЕНИЕ СС    </span>                </h3>
+            <div class="row "><div style="font-size:13px; "><i class="fa fa-database " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Database name: <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&txtZip=&Banknames=&lstCountry=&lstCity=&lstState=&base=USA%2FMIX_(OZ_MG)_[Sniffed%2FLocalBase]+(Daily+Updates)&Lever=&btnSearch=Search ">
+<strong style="color:#2a9fd6; ">FEB#USA/MIX_(OZ_MG)_[Sniffed/LocalBase] (Daily Updates)</strong></a><br />
+
+ <i class="fa fa-bar-chart " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Validrate: <strong>86%</strong><br />
+<i class="fa fa-calendar-plus-o " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Updated at: <strong>2025/02/05</strong></td><br />
+<td> <i class="fa fa-flag " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Country list: <i title="UNITED STATES " class="flag-US "></i> <i title="UNITED STATES " class="flag-GB "></i> <i title="PORTUGAL " class="flag-PT
+                    "></i>  <i title="BRAZIL " class="flag-BR "></i>  <i title="GERMANY " class="flag-DE "></i>  <i title="JAPAN " class="flag-JP "></i>  <i title="CHILE " class="flag-CL "></i>  <i title="GABON " class="flag-GA "></i>  <i title="URUGUAY " class="flag-UY
+                    "></i>  <i title="TURKEY " class="flag-TR "></i>  <i title="TOGO " class="flag-TG "></i>  <i title="ROMANIA " class="flag-RO "></i>  <i title="CHINA " class="flag-CN "></i>  <i title="MALAYSIA " class="flag-MY "></i>  <i title="CROATIA " class="flag-HR "></i>  
+</div></td></tr>  
+<br />
+				    </div>
+    </div>
+<div style="border-bottom:1px solid #282828; ">
+ </div>
+	</div>    
+                    
+    						
+<div>
+
+             
+                   <div class="card-body ">
+                       
+                       
+            <h3>
+                <span style="color: #dedace; ">CC UPDATE/ОБНОВЛЕНИЕ СС    </span>                </h3>
+            <div class="row "><div style="font-size:13px; "><i class="fa fa-database " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Database name: <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstCity=&lstState=&txtZip=&base=UK%2FMIX_(SAKAR)_[Sniffed|Firsthand]+(Daily+updates)&btnSearch=Search ">
+<strong style="color:#2a9fd6; ">FEB#UK/MIX_(SAKAR)_[Sniffed|Firsthand] (Daily updates)</strong></a><br />
+
+ <i class="fa fa-bar-chart " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Validrate: <strong>88%</strong><br />
+<i class="fa fa-calendar-plus-o " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Updated at: <strong>2025/02/04</strong></td><br />
+
+<td><i class="fa fa-retweet " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Refundable: No<br /><i class="fa fa-flag " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd;
+                    "></i>Country list:  <i title="UNITED KINGDOM " class="flag-GB "></i> <i title="UNITED STATES " class="flag-US "></i>
+</div>
+
+</td><p style="text-align:center;color:#ff6600; ">237 FRESH HQ SNIFFED CARDS ADDED</p>
+
+</tr>  
+<br />
+				    </div>
+    </div>
+<div style="border-bottom:1px solid #282828; ">
+ </div>
+	</div>    
+                    
+    						
+<div>
+
+             
+                   <div class="card-body ">
+                       
+                       
+            <h3>
+                <span style="color: #dedace; ">CC UPDATE/ОБНОВЛЕНИЕ СС    </span>                </h3>
+            <div class="row "><div style="font-size:13px; "><i class="fa fa-database " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Database name: <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstCity=&lstState=&txtZip=&base=MIX+INTER+CVV+VR95%25&btnSearch=Search ">
+<strong style="color:#2a9fd6; ">FEB#MIX INTER CVV VR95%</strong></a><br />
+
+ <i class="fa fa-bar-chart " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Validrate: <strong>84%</strong><br />
+<i class="fa fa-calendar-plus-o " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Updated at: <strong>2025/02/03</strong></td><br />
+
+<td><i class="fa fa-retweet " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Refundable: No<br /><i class="fa fa-flag " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd;
+                    "></i>Country list:  <i title="UNITED STATES " class="flag-US "></i>
+</div>
+
+</td><p style="text-align:center;color:#ff6600; ">312 FRESH HQ SNIFFED CARDS ADDED</p>
+
+</tr>  
+<br />
+				    </div>
+    </div>
+<div style="border-bottom:1px solid #282828; ">
+ </div>
+	</div>    
+                    
+    						
+<div>
+
+             
+                   <div class="card-body ">
+                       
+                       
+            <h3>
+                <span style="color: #dedace; ">CC UPDATE/ОБНОВЛЕНИЕ СС    </span>                </h3>
+            <div class="row "><div style="font-size:13px; "><i class="fa fa-database " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Database name: <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=USA%2FMIX_(OLDFRIEND)_[Sniffed%2FIP%2FLocalbase]
+                    (Daily updates)&lstCity=&btnSearch=Search ">
+<strong style="color:#2a9fd6; ">FEB#USA/MIX_(OLDFRIEND)_[Sniffed/IP/Localbase] (Daily updates)</strong></a><br />
+
+ <i class="fa fa-bar-chart " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Validrate: <strong>99%</strong><br />
+<i class="fa fa-calendar-plus-o " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Updated at: <strong>2025/02/02</strong></td><br />
+
+<td><i class="fa fa-retweet " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd; "></i>Refundable: No<br /><i class="fa fa-flag " aria-hidden="true " style="font-size:16px; margin:0 7px 7px 0;color:#ddd;
+                    "></i>Country list: <i title="UNITED STATES " class="flag-US "></i>  <i title="CANADA " class="flag-CA "></i>  <i title="UNITED KINGDOM " class="flag-GB "></i>  
+</div>
+
+</td><p style="text-align:center;color:#ff6600; ">337 FRESH HQ SNIFFED CARDS ADDED</p>
+
+</tr>  
+<br />
+				    </div>
+    </div>
+<div style="border-bottom:1px solid #282828; ">
+ </div>
+	</div>    
+                    
+          	
+    </div>    
+    </div>
+     
+    <div style="width:550px;text-align:left; ">&nbsp;&nbsp;&nbsp;Page:&nbsp;<input type="TEXT " class="page_go " value="1 " onchange="window.location.href='?page=' +this.value+ '&pageAds=' "/><a href="?page=2&pageAds=">&nbsp;2&nbsp;</a>...<a href="
+                    ?page=17&pageAds=">&nbsp;17&nbsp;</a><a href=" ?page=2&pageAds=">&nbsp;&gt;&gt;&nbsp;</a></div>
+    
+    
+    
+ <div class=" support-button "></div>
+    <div class="modal fade form-popupS " tabindex="-1 " role="dialog " aria-labelledby="myLargeModalLabel-1 " aria-hidden="true ">
+  <div class="modal-supp ">
+            <p><strong>If you have any problem please add us on or <a href="/support/create/ "> Create Ticket. </a></strong></p><br>
+            <p><strong><span style="color: #ff0000; ">JABBER1:</span> <a href="/cdn-cgi/l/email-protection " class="__cf_email__ " data-cfemail="5b082e2b2b34292f1b2d38372e3975282e2b2b34292f ">[email&#160;protected]</a><a href=" "><br></a></strong></p><br>
+            <p><strong><span style="color: #ff0000; ">JABBER2:</span> <a href="/cdn-cgi/l/email-protection " class="__cf_email__ " data-cfemail="d586a0a5a5baa7a1e795a3b6b9a0b7fba6a0a5a5baa7a1 ">[email&#160;protected]</a></strong></p>
+        </div>
+    </div>
+
+    <div class="invite-button "></div>
+    <div class="modal fade form-popupI " tabindex="-1 " role="dialog " aria-labelledby="myLargeModalLabel-1 " aria-hidden="true ">
+        <div class="modal-inv alert alert-success " >
+            Please note, we use invitation code system during the registration. You can share your unique invitation code to invite your friends.<br>
+            <h3>No code available Please remember u can only use it 2 times. Then it would be replaced with a new one.</h3>
+        </div>
+    </div>
+    
+    
+    
+   
+
+
+</div>
+    <div class="col-md-4 ">
+                    <div>
+                <h4>
+                  <Strong style="color: #dedace; ">MAIN INFO        </strong>     </h4>
+            </div>
+
+            <div   style="background-color: #151515 ">
+                <div  style="padding: 20px; ">
+                 
+<h5><strong style="color: #ff9900; ">Private Link:</strong></h5>
+<h5><a href="https://trytobuy.su " target="_blank ">trytobuy.su</a></h5><br>
+
+<h5><strong style="color: #ff9900; ">&nbsp;Tor links</strong></h5>
+<h5>Domain (tor) #1 <a href="http://vclubccvd468icndg43sjpaowcdkiatcmdfj3zw4mc2z6zwbhved.onion/ " target="_blank ">http://vclubccvd468icndgjpaowcdkiatcmdfj3hved.onion/</a></h5>
+<h5>Domain (tor) #2 <a href="http://vclubccvpbtfcpbhl7itbzygzuusjd8vkws2mlljc22taooolfocf.onion/ " target="_blank ">http://vclubccvpbtfcpbhl7itbzygzuusjd8aooolfocf.onion/</a></h5>
+<br>
+<p><strong style="color: #ff0000; ">You have ccs/fulls for sell ? Join our team</strong></p><br>
+<p><strong style="color: #ff0000; ">Jabber:&nbsp; &nbsp;<a href="# " ><span class="__cf_email__ " data-cfemail="6330060f0f0611102315000f16014d101613130c1117 ">[email&#160;protected]</span></a> or <a href="/support/create/ " >Create ticket</a> </strong></p>
+                </div>
+            </div>
+                            <div style="padding: 10px; ">
+                <h4>
+                    <strong style="color: #dedace; ">GOLD BASES</strong>
+                </h4>
+            </div>
+            <div style="background-color: #151515 ">
+                <div style="padding: 20px; ">
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=USA%2FMIX_(OLDFRIEND)_[Sniffed%2FIP%2FLocalbase]+(Daily+Updates)&lstCity=&btnSearch=Search " style="color:#ff9900 ">FEB#USA/MIX_(OLDFRIEND)_[Sniffed/IP/Localbase] (Daily Updates)</a><br />
+                     <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=US%2FMIX_(ZEN)_[Sniffed%2FFirsthand]&lstCity=&btnSearch=Search " style="color:#ff9900 ">FEB#US/MIX_(ZEN)_[Sniffed/Firsthand]</a><br />  
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=USA%2FWMIX_(ASEDEBILYA)_(Daily+Updates)+&btnSearch=Search " style="color:#ff9900 ">FEB#USA/WMIX_(ASEDEBILYA)_(Daily Updates) </a><br />
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&baDecse=_Fresh+ccs_Update_[Sniffed%2FLocalbase]&btnSearch=Search&btnSearch=Search " style="color:#ff9900 ">FEB#Dec_Fresh ccs_Update_[Sniffed/Localbase]</a><br />
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=SALE_UK_MIX_(Fresh%2Cdob)_[Sniffed|Firsthamd]&lstCity=&btnSearch=Search " style="color:#ff9900 ">FEB#SALE_UK_MIX_(Fresh,dob)_[Sniffed|Firsthand]</a><br />
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=ARGENTINA/US/MIX_(BOA)_[Sniffed/Firsthand]&btnSearch=Search " style="color:#ff9900 ">FEB#ARGENTINA/US/MIX_(BOA)_[Sniffed/Firsthand] </a><br />
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=WORLDMIX_(CARAMBA)_[SQL%2FGDVR]&lstCity=&btnSearch=Search " style="color:#ff9900 ">FEB#WORLDMIX_(CARAMBA)_[SQL/GDVR]</a><br />
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=USA_(FRESHGINIUS)_[Sniffed/FirstHand]&btnSearch=Search " style="color:#ff9900 ">FEB#UK_MIX_(SUPERHQ)_[Sniffed|Firsthamd]</a><br />
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=US_CA_UK_EU_Mix_(Odin)_[Sniffed/Localbase]&btnSearch=Search " style="color:#ff9900 ">FEB#US_CA_UK_EU_Mix_(Odin)_[Sniffed/Localbase]</a><br /> 
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=CANADA_DOB_(DB)_[Spam%2FFirsthand%2FLocalbase]&btnSearch=Search " style="color:#ff9900 ">FEB#CANADA_DOB_(DB)_[Spam/Firsthand/Localbase] </a><br />
+                     <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=CANADA_(WARKID%2FXTOKEN)_[Localbase]&btnSearch=Search " style="color:#ff9900 ">FEB#CANADA_(WARKID/XTOKEN)_[Localbase] ✈</a><br />      
+                 <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=CANADA_(WARKID%2FXTOKEN)_[Localbase]&btnSearch=Search " style="color:#ff9900 ">FEB#CANADA_(WARKID/XTOKEN)_[Localbase]]</a><br />
+                     <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=UK_MIX_(SUPERHQ)_[Sniffed|Firsthand]&lstCity=&btnSearch=Search " style="color:#ff9900 ">FEB#UK_MIX_(SUPERHQ)_[Sniffed|Firsthand]</a><br />
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=USA_(CREDITAIRLINES)_[Sniffed%2FHaveIP%2FLocalBase]+(Daily+Updates)&lstCity=&btnSearch=Search " style="color:#ff9900 ">FEB#USA_(CREDITAIRLINES)_[Sniffed/HaveIP/LocalBase] (Daily Updates)</a><br />
+                   <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=WorldMix_[Sniffed/Firsthand/Localbase]&btnSearch=Search " style="color:#ff9900 ">FEB#WorldMix_[Sniffed/Firsthand/Localbase]	</a><br />
+                    <i class="fa fa-fire "></i> <a href="/shop/ccs/cards.php?stagnant=false&txtBin=&lstCountry=&lstState=&txtZip=&base=UK_MIX_(SUPERHQ)_[Sniffed|Firsthand]&lstCity=&btnSearch=Search " style="color:#ff9900 ">FEB#UK_MIX_(SUPERHQ)_[Sniffed|Firsthand]</a><br />              
+                    </div>
+            </div>
+            </div>
+</div>    <div style="height: 100px; "></div>
+</div>
+  
+  
+  
+ 
+  
+  
+  
+  
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN " "http://www.w3.org/TR/html4/strict.dtd ">
+<html>
+    <head>
+
+<script data-cfasync="false " src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js "></script><script type="text/javascript " src="/valid/jquery.min.js "></script>
+<script type="text/javascript " src="/valid/jquery.noty.js "></script>
+
+
+
+<title>VClub</title>
+    
+
+            <script src="/valid/bootstrap.min.js "></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/valid/html5shiv.js "></script>
+      <script src="/valid/respond.min.js "></script>
+    <![endif]-->
+  </head>
+<body> 
+   
+
+<style>
+    .alpha60 {
+
+        background: #45484d;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDg0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));
+        background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%);
+        background: -o-linear-gradient(top, #45484d 0%,#000000 100%);
+        background: -ms-linear-gradient(top, #45484d 0%,#000000 100%);
+        background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+                bottom:0px;
+                position: fixed;
+        width: 100%;
+        padding-left:5px; padding-right:5px;
+        padding-top:3px;
+        padding-bottom:3px;
+margin-left:0px;
+    }
+    
+    
+      
+        .afood {
+  color:#66FF33;
+  text-decoration:none;
+  background-color:transparent
+}
+.afood:hover {
+  color:#88FF55;
+  text-decoration:none
+}
+
+
+</style>
+
+<div class="alpha60 ">
+    <div class="container ">
+       
+            
+            
+        
+            
+             <div>
+                                     <div class="label label-default " style="display:block; float:left; color:#B8B8B8; border: 1px #262626 solid; "> <span style="color:red; font-size:18px; "><strong ></strong>SELLER?</strong></span>
+                <a class="afood " href="/shop/ccs/sellyourstuff.php "><span><strong style="font-weight:bold; color:#66FF33; font-size:18px; " >SELL YOUR STUFF WITH US</strong></span></a>
+            </div>                       
+                        </div>
+                        
+                        
+                        <div style="display:block; float:right; ">Balance: <strong style="font-size:14px;color:#32CD32; " >0.00 $ </strong>&nbsp;&nbsp;
+                                   <a style="color:#FFFFFF;font-size:14px; "  href="/operations/topup/ ">     <img src="/images/add.png "></a>
+                    </div>
+        
+    </div>
+      
+
+</div>                </div>
+        
+        <script>
+        //AJAX_POINTER
+        var ajaxNoty;
+        var ajaxError = 'Error while during processing your request.'
+        //NOTIFY:
+        function myNotify(text,type,timeout) {
+            timeout = (!timeout) ? false : timeout * 1000;
+            return noty({
+                    text: text,
+                    type: type,
+                    dismissQueue: true,
+                    layout: 'bottomRight',
+                    theme: 'default',
+                    timeout: timeout,
+                    template: '<div class="noty_message "><span class="noty_text "></span><div class="noty_close "></div></div>',
+                    animation: {
+                      open: {height: 'toggle'},
+                      close: {height: 'toggle'},
+                      easing: 'swing',
+                      speed: 0 // opening & closing animation speed
+                    }
+            });
+        }
+
+        function confirmAction(text) {
+           return noty({
+                        text: text,
+                        type: "confirm ",
+                        dismissQueue: true,
+                        layout: 'center',
+                        theme: 'default',
+                        timeout: 0,
+                        template: '<div class="noty_message "><span class="noty_text "></span><div class="noty_close "></div></div>',
+                        buttons: [
+                          {addClass: 'btn btn-primary', text: 'Ok', onClick: function($noty) {
+                              return true;
+                              
+                            }
+                          },
+                          {addClass: 'btn btn-danger', text: 'Cancel', onClick: function($noty) {
+                              return false;
+                            }
+                          }
+                        ]
+            });
+        }
+        </script>      
+      
+
+  <script type="text/javascript ">
+/*<![CDATA[*/
+$(".billing_point ").addClass("red ");
+jQuery(function($) {
+jQuery('#yw1').tab('show');
+});
+/*]]>*/
+</script>
+
+</body>
+</html>

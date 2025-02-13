@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./files/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./files/bootstrap-responsive.css"
+    />
+    <link rel="stylesheet" type="text/css" href="files/yiistrap.css" />
+    <link rel="stylesheet" type="text/css" href="files/flags.css" />
+    <link rel="stylesheet" type="text/css" href="files/newlogon2.css" />
+    <link rel="stylesheet" type="text/css" href="files/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="files/jquery-ui-1.10.0.custom.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="files/style.css" />
+    <link rel="stylesheet" type="text/css" href="files/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="files/font-awesome.min_002.css"
+    />
+    <script type="text/javascript" src="files/jquery.min.js"></script>
+    <script type="text/javascript" src="files/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="files/jquery-ui-1.10.0.custom.min.js"
+    ></script>
+    <script type="text/javascript" src=".files/jquery.noty.js"></script>
+    <script type="text/javascript" src="files/center.js"></script>
+    <script type="text/javascript" src="files/bottomRight.js"></script>
+    <script type="text/javascript" src="files/default.js"></script>
+    <script type="text/javascript" src="files/core.js"></script>
+    <script type="text/javascript" src="files/bootstrap-datepicker.js"></script>
+    <title>VClub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="onion-location"
+      content="http://vclubshopd426icndg43sjpaowcdkiatcmdfj3zw4mc2z6zwbhvecwmyd.onion"
+    />
+    <meta charset="utf-8" />
+  </head>
+  <body class="text-center">
+    <style>
+      html {
+        background-color: #000;
+        height: 100%;
+      }
+
+      body,
+      body > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <div class="container">
+      <p style="text-align: center"></p>
+      <div class="row" style="text-align: center">
+        <div class="col-md-12">
+          <div class="text registration">
+            Registration: <strong>Open</strong>, Registration Fee:
+            <strong>$50</strong>
+          </div>
+          <div class="form">
+            <form
+              id="yw0"
+              action="#"
+              method="post"
+              onsubmit="redirectToShop(event)"
+            >
+              <input
+                type="hidden"
+                value="YlpVN0xZRnIzNVJDWnoyQUhvaAXxjjFUFuUR9RypxDGWnXwDbfmXyCx47OIi5w=="
+              />
+              <div class="fields">
+                <div class="fields-half">
+                  <div class="form-group">
+                    <label
+                      class="control-label required"
+                      for="P_LoginForm_username"
+                    >
+                      Username <span class="required">*</span></label
+                    >
+                    <div class="controls">
+                      <input
+                        id="inputUsername"
+                        class="form-control"
+                        placeholder="Username *"
+                        name="txtUser"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <script>
+                    let userDoc = document.getElementById("inputUsername");
+
+                    userDoc.addEventListener("input", function () {
+                      localStorage.setItem("username", userDoc.value);
+                    });
+
+                    console.log("set in local storage");
+
+                    window.addEventListener("load", function () {
+                      if (localStorage.getItem("username")) {
+                        userDoc.value = localStorage.getItem("username");
+                      }
+                    });
+                  </script>
+                </div>
+              </div>
+              <div class="fields">
+                <div class="fields-half">
+                  <div class="form-group">
+                    <label
+                      class="control-label required"
+                      for="P_LoginForm_password"
+                    >
+                      Password <span class="required">*</span></label
+                    >
+                    <div class="controls">
+                      <input
+                        id="inputPassword"
+                        class="form-control"
+                        placeholder="Password *"
+                        name="txtPass"
+                        type="password"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="control-group-inline">
+                <div class="form-group">
+                  <label class="control-label" for="P_LoginForm_verifyCode"
+                    >Captcha</label
+                  >
+                  <div class="controls">
+                    <input
+                      id="inputCaptcha"
+                      autocomplete="off"
+                      class="form-control half"
+                      placeholder="Captcha *"
+                      name="security_code"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="captcha" id="captcha">
+                  <img
+                    src="captcha.php?width=200&height=65&characters=6"
+                    width="100px"
+                    height="46px"
+                  />
+                </div>
+              </div>
+
+              <div class="fields">
+                <div class="fields-half">
+                  <div class="form-actions">
+                    <button
+                      class="green btn btn-secondary"
+                      type="submit"
+                      name="btnLogin"
+                    >
+                      Login
+                    </button>
+                  </div>
+                  <div class="form-actions">
+                    <a href="register.php.html">
+                      <button
+                        style=""
+                        class="btn btn-secondary"
+                        name="yt1"
+                        type="button"
+                      >
+                        Registration
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <script>
+              function redirectToShop(event) {
+                event.preventDefault(); // Prevents actual form submission
+                window.location.href = "/shopp/shop/ccs/index.html"; // Redirects to shop.html
+              }
+            </script>
+
+            <div class="fields">
+              Forgot your password use
+              <a href="../restore/index.html">this form</a>.
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            font-size: 20px !important;
+          "
+        >
+          <div class="dropdown">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i title="English" class="flag-US"></i> English
+            </a>
+
+            <div
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenuLink"
+              style=""
+            >
+              <a class="dropdown-item language-item" data-id="en" href="#"
+                ><i title="English" class="flag-US"></i> English</a
+              >
+              <a class="dropdown-item language-item" data-id="ru" href="#"
+                ><i title="Русский" class="flag-RU"></i> Русский</a
+              >
+              <a class="dropdown-item language-item" data-id="fr" href="#"
+                ><i title="Français" class="flag-FR"></i> Français</a
+              >
+            </div>
+          </div>
+          <script>
+            document.querySelectorAll(".language-item").forEach((link) => {
+              link.addEventListener("click", (event) => {
+                event.preventDefault();
+                const urlParams = new URLSearchParams(window.location.search);
+                urlParams.set("lang", link.dataset.id);
+                window.location.search = urlParams;
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <script>
+      //AJAX_POINTER
+      var ajaxNoty;
+      var ajaxError = "Error while processing your request.";
+
+      //NOTIFY:
+      function myNotify(text, type, timeout) {
+        timeout = !timeout ? false : timeout * 1000;
+        return noty({
+          text: text,
+          type: type,
+          dismissQueue: true,
+          layout: "bottomRight",
+          theme: "default",
+          timeout: timeout,
+          template:
+            '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
+          animation: {
+            open: { height: "toggle" },
+            close: { height: "toggle" },
+            easing: "swing",
+            speed: 0, // opening & closing animation speed
+          },
+        });
+      }
+
+      function confirmAction(text) {
+        return noty({
+          text: text,
+          type: "confirm",
+          dismissQueue: true,
+          layout: "center",
+          theme: "default",
+          timeout: 0,
+          template:
+            '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
+          buttons: [
+            {
+              addClass: "btn btn-primary",
+              text: "Ok",
+              onClick: function ($noty) {
+                return true;
+              },
+            },
+            {
+              addClass: "btn btn-danger",
+              text: "Cancel",
+              onClick: function ($noty) {
+                return false;
+              },
+            },
+          ],
+        });
+      }
+    </script>
+    <script type="text/javascript" src="files/bootstrap.js"></script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      jQuery("body").popover({ selector: "a\x5Brel\x3Dpopover\x5D" });
+      jQuery("body").tooltip({ selector: "a\x5Brel\x3Dtooltip\x5D" });
+      jQuery(function ($) {
+        jQuery(document).on("click", "#yw1", function () {
+          jQuery.ajax({
+            url: "\/usercp\/auth\/captcha?refresh=1",
+            dataType: "json",
+            cache: false,
+            success: function (data) {
+              jQuery("#yw1").attr("src", data["url"]);
+              jQuery("body").data("captcha.hash", [
+                data["hash1"],
+                data["hash2"],
+              ]);
+            },
+          });
+          return false;
+        });
+      });
+      /*]]>*/
+    </script>
+  </body>
+</html>
