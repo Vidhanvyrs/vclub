@@ -239,7 +239,7 @@
                     <div class="">
 
                         <div>
-                            <form class="well" id="verticalForm" action="/usercp/profile/edit" method="post">
+                            <form class="well" id="verticalForm">
                                 <input type="hidden" value="amdwbjQxOFhmSnNqRWZxUmR0X29CY2lZUERBd1I4cWRrqo4dNlHJgHo7jdO6_Xoo1OHQN_nCQrC7Vl3VWYK7tA==" name="YII_CSRF_TOKEN">
                                 <div class="form-group"><label class="control-label required" for="editProfileForm_password">New password: <span class="required">*</span></label>
                                     <div class="controls"><input class="form-control" name="editProfileForm[password]" id="editProfileForm_password" type="password" maxlength="64"></div>
@@ -252,6 +252,13 @@
                                 </div> <br>
                                 <div class="form-actions"><button class="btn btn-primary" href="/password/usercp/profile/edit/index.html" name="yt0">Update</button> <button class="btn btn-secondary" type="reset" name="yt1">Reset</button></div>
                             </form>
+                            <script>
+                                document.getElementById("verticalForm").addEventListener("submit", function(event) {
+                                    event.preventDefault(); 
+                                    window.location.href = "/password/usercp/profile/edit/index.html"; // Redirect after submission
+                                });
+                                </script>
+                                
                         </div>
                         <div class="span1"></div>
 
